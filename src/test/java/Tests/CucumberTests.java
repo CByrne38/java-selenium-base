@@ -11,7 +11,7 @@ import org.junit.runner.RunWith;
         glue = {"stepdefs"})
 
 
-public class CucumberConfig {
+public class CucumberTests {
 
 
 }
