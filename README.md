@@ -1,2 +1,1 @@
-# automationframework-java
-Base automation framework in Java
+# java-selenium-base
