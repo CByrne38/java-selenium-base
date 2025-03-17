@@ -52,22 +52,5 @@ public class MyStepDefs {
         data = new ApplicationData(firstname, lastname, age, address1, address2, address3, address4, postcode, email, amount);
     }
 
-    @Given("the user has a valid <username> and <password>")
-    public void theUserHasAValidUsernameAndPassword() {
-
-    }
-
-    @And("nobody his logged in already")
-    public void nobodyHisLoggedInAlready() {
-    }
-
-    @When("the user logs in")
-    public void theUserLogsIn() {
-
-    }
-
-    @Then("they are logged in")
-    public void theyAreLoggedIn() {
-    }
 }
 
