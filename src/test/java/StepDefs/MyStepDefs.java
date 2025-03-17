@@ -36,7 +36,7 @@ public class MyStepDefs {
         Assertions.assertTrue(applyPage.isSuccessful());
     }
 
-    @Given("a customer is under the age of 18")
+    @Given("a customer is under the age of {int}")
     public void aCustomerIsUnderTheAgeOf() {
         data = new ApplicationData("Alice", "Bobson", "17", "1 New Street", "Bradford", "", "", "BD1 1AB", "tesdt@test.com", "3000");
     }
