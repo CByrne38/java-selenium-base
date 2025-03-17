@@ -1,15 +1,13 @@
 package Tests;
 
-import io.cucumber.junit.Cucumber;
-import io.cucumber.junit.CucumberOptions;
-import org.junit.runner.RunWith;
+import org.junit.platform.suite.api.*;
 
-@RunWith(Cucumber.class)
-@CucumberOptions(
-        plugin = {"pretty", "html:target/cucumber", "json:target/cucumber.json"},
-        features = "src/test/resources/features/",
-        glue = {"StepDefs"})
+import static io.cucumber.core.options.Constants.PLUGIN_PROPERTY_NAME;
 
+@Suite
+@IncludeEngines("cucumber")
+@SelectClasspathResource("features")
+@ConfigurationParameter(key = PLUGIN_PROPERTY_NAME, value = "io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm")
 
 public class CucumberTests {
 

@@ -8,12 +8,14 @@ Feature: New Valid Loan Applications
     When the details are submitted
     Then the application should be successful
 
+    @firefox
   Scenario: Customer is under 18
     Given a customer is under the age of 18
     When the details are submitted
     Then the application should not be successful
 
 
+  @firefox @edge
   Scenario Outline: valid customer details supplied
     Given a customer has a valid <firstname> <lastname> <age> <address1> <address2> <address3> <address4> <postcode> <email> <loanamount>
     When the details are submitted

@@ -28,6 +28,9 @@ public class MyStepDefs {
             loginPage.login("user", "user");
         }
         homePage.goToApplyPage();
+
+        // Data is properly initialised here
+        data = new ApplicationData("Alice", "Bobson", "17", "1 New Street", "Bradford", "", "", "BD1 1AB", "tesdt@test.com", "3000");
         applyPage.submitApplication(data);
     }
 

@@ -37,7 +37,10 @@ public class HomePage extends BasePage {
         driver.findElement(ADMIN_BUTTON).click();
     }
 
-    public boolean isSuccessful() {
-        return isSuccessful();
+
+    private boolean loggedIn;
+
+    public boolean isLoggedOut() {
+        return !loggedIn;
     }
 }

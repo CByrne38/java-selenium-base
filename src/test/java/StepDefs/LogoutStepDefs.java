@@ -36,7 +36,7 @@ public class LogoutStepDefs {
 
     @Then("they are logged out")
     public void theyAreLoggedOut() {
-        Assertions.assertTrue(homePage.isSuccessful()); }
+        Assertions.assertTrue(homePage.isLoggedOut()); }
 
     @And("back to login page")
     public void backToLoginPage() {
